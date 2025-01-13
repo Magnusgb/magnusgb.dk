@@ -16,8 +16,8 @@ const routes = [
     props: true  // Sørger for at id bliver sendt som en prop til komponenten
   },
   {
-    path: '/about', 
-    name: '',
+    path: '/om-mig', 
+    name: 'om-mig',
     component: about,
   },
 ];

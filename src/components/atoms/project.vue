@@ -1,4 +1,5 @@
 <template>
+  <heading1 title="Projekter" />
   <div class="projects-list">
     <div
       v-for="(project, index) in projects"
@@ -22,6 +23,8 @@
 
   
   <script>
+  import heading1 from '@/components/atoms/heading1.vue';
+
   export default {
     name: 'ProjectsList',
     data() {
@@ -57,6 +60,9 @@
           }, 
         ]
       };
+    },
+    components: {
+      heading1
     }
   };
   </script>

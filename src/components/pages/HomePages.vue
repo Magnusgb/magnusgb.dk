@@ -4,9 +4,6 @@
   <project />
 </template>
 
-
-
-
 <script>
 import menubar from '@/components/molecules/menubar.vue';
 import project from '@/components/atoms/project.vue';

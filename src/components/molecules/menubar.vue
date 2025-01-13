@@ -16,11 +16,10 @@
               <router-link to="/">Projekter</router-link> 
             </li>
             <li>
-              <router-link to="/about">Om mig</router-link> 
+              <router-link to="/om-mig">Om mig</router-link> 
             </li>
             <li>
               <a href="https://read.cv/magnusgb" target="_blank" rel="noopener noreferrer">Resume</a>
-
             </li>
           </ul>
         </div>
