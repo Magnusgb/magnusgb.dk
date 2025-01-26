@@ -2,7 +2,7 @@
   <menubar />
   <intro />
   <project />
-  <skill skill="Test" />
+  <skill />
 </template>
 
 <script>
