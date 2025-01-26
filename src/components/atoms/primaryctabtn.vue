@@ -1,20 +1,26 @@
 <script>
 export default {
-    name: 'primaryctabtn',
+  name: 'PrimaryCtaBtn',
+  props: {
+    text: {
+      type: String,
+      required: true,
+    },
+  },
 };
+
 
 </script>
 <template>
-    <button class="primarybtn">
-        Kontakt mig!
-    </button>
+    <button class="primarybtn"> {{ text }}</button>
 </template>
 
 <style scoped>
    .primarybtn {
-        padding: .6rem 1.4rem;
-        border-radius: 15px;
+        border: none;
         background-color: transparent;
         cursor: pointer;
+        text-transform: uppercase;
+        font-size: 1rem;
     }
 </style>

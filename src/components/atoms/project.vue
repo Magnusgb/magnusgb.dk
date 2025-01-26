@@ -1,4 +1,5 @@
 <template>
+  <div class="project-overview">
   <heading1 title="Projekter" />
   <div class="projects-list">
     <div
@@ -13,17 +14,21 @@
           <div class="project__container__text">
             <h3>{{ project.title }}</h3>
             <p class="projects-tech-text">{{ project.tech }}</p>
+            <span class="projects-tech-text-underline"></span>
             <p>{{ project.description }}</p>
+            <primaryctabtn text="Se mere om projektet her" />
           </div>
         </div>
       </router-link>
     </div>
   </div>
+</div>
 </template>
 
   
   <script>
   import heading1 from '@/components/atoms/heading1.vue';
+  import primaryctabtn from './primaryctabtn.vue';
 
   export default {
     name: 'ProjectsList',
@@ -62,25 +67,32 @@
       };
     },
     components: {
-      heading1
+      heading1,
+      primaryctabtn
     }
   };
   </script>
   
   <style scoped lang="scss">
+
+.project-overview {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
 .projects-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* Sætter to kolonner */
-  gap: 20px;
   justify-items: center;
+  gap: 40px;
 }
 
 
 .project__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 20px;
+  border-radius: 20px;
 }
 
 .project__container__img {
@@ -107,7 +119,6 @@
 
 .projects-tech-text {
   color: grey;
-  text-decoration: underline;
   text-transform:uppercase ;
 }
   </style>

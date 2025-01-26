@@ -31,7 +31,7 @@
       return {
         projects: [
           {
-            imageSrc: '@/assets/pictures/cover-2.png',
+            //imageSrc: '../src/assets/pictures/cover-2.png',//
             imageAlt: 'Project 1 image',
             title: 'UI/UX - Padelshoppen',
             description: 'Dette projekt var i forbindelse med min afsluttende eksamen som multimediedesigner. I den forbindelse, desigende jeg denne app hvor et loyalitetsprogram er implementeret.',
